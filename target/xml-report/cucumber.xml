@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.118">
+    <testcase classname="Read Data" name="Reading Hotel Reservations" time="3.586">
+        <system-out><![CDATA[Given user connects to the database.........................................passed
+And user gets "Name" the "Hotel" table......................................passed
+And user reads all rows in the "Name" column................................passed
+And user gets the value in row 15 in "Name" column and verifies the value is "LILLE".passed
+And user gets the value in row 1 in "Name" column and verifies the value is "Rodisson Demo".passed
+And user gets the value in row 10 in "Name" column and verifies the value is "SUNSET".passed
+]]></system-out>
+    </testcase>
+</testsuite>

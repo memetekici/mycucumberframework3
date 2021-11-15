@@ -1,0 +1,177 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User connected to the database",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1973841600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user connects to the database",
+            "match": {
+              "location": "database_stepdefinition.DBRead.user_connects_to_the_database()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:47:55.321Z",
+        "line": 6,
+        "name": "Reading Hotel Reservations",
+        "description": "",
+        "id": "read-data;reading-hotel-reservations",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 262085100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user gets \"Name\" the \"Hotel\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Hotel\"",
+                  "offset": 21
+                }
+              ],
+              "location": "database_stepdefinition.DBRead.user_gets_the_table(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 849646400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user reads all rows in the \"Name\" column",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name\"",
+                  "offset": 27
+                }
+              ],
+              "location": "database_stepdefinition.DBRead.user_reads_all_rows_in_the_column(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162270100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user gets the value in row 15 in \"Name\" column and verifies the value is \"LILLE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Name\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"LILLE\"",
+                  "offset": 73
+                }
+              ],
+              "location": "database_stepdefinition.DBRead.user_gets_the_value_in_row_in_column_and_verifies_the_value_is(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161176500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user gets the value in row 1 in \"Name\" column and verifies the value is \"Rodisson Demo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Name\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Rodisson Demo\"",
+                  "offset": 72
+                }
+              ],
+              "location": "database_stepdefinition.DBRead.user_gets_the_value_in_row_in_column_and_verifies_the_value_is(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1011600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user gets the value in row 10 in \"Name\" column and verifies the value is \"SUNSET\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Name\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"SUNSET\"",
+                  "offset": 73
+                }
+              ],
+              "location": "database_stepdefinition.DBRead.user_gets_the_value_in_row_in_column_and_verifies_the_value_is(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DBtest"
+          }
+        ]
+      }
+    ],
+    "name": "Read Data",
+    "description": "",
+    "id": "read-data",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/jdbc_read.feature",
+    "tags": [
+      {
+        "name": "@DBtest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
